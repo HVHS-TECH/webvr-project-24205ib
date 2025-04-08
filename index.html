@@ -9,7 +9,13 @@
     <body>
     <a-scene>
       <a-sky color="lightblue"></a-sky>
-      
+      <a-light id="amb" type="ambient"></a-light>
+
+<a-light id="dir" type="directional"></a-light>
+
+<a-light id="pnt" type="point"></a-light>
+
+<a-light id="spt" type="spot"></a-light>
        <!-- Put this inside the <a-scene> -->
       <a-entity 
       ply-model="src:environment.ply"
@@ -25,7 +31,7 @@
       ply-model="src:Car.ply"
       position="12 -3 -19"
       rotation="-90 0 90"
-      ></a-entity>      
+      ></a-entity>    
     </a-scene>
   </body>
 </html>
